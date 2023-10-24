@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAppNodejs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+
+        <div id="weathercdn">
+            <i class="fa-solid fa-sun fa-xl" style="color: #fee27c;"></i>
+        </div>
+        <div class="info">
+            <h2 class="location">
+                <i class="fa-solid fa-street-view"></i>{%location%},{%country%}
+            </h2>
+            <p id="date">THU|OCT 19|02:05PM</p>
+            <H1 class="temp">{%tempval%}</H1>
+            <h3 class="tempmin_max">Min {%tempmin%} | Max {%tempmax%}</h3>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="node.js"></script>
+</body>
+
+</html>
